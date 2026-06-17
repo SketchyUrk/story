@@ -1,5 +1,18 @@
 from time import sleep
 
+def gapPrint(text):
+    print("\n"+str(text)+"\n")
+
+def tprint(text:str, delay:float=.1):
+    for char in text:
+        print(
+            char,
+            end="",
+            flush=True
+        )
+        sleep(delay)
+
+
 def commandHelp():
     print("""Commands:
           Interact with an item with 'USE <item>'
@@ -8,5 +21,5 @@ def commandHelp():
           You can view these commands anytime with 'help'
           Good Luck!""")
     
-commandHelp()
-    
+def gameStart():
+    print("You wake up in your home, but fi")
